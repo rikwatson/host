@@ -14,6 +14,7 @@
 		38D74A391F64354F008E5A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D74A371F64354F008E5A15 /* LaunchScreen.storyboard */; };
 		38D74A441F64354F008E5A15 /* hostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D74A431F64354F008E5A15 /* hostTests.swift */; };
 		38D74A4F1F64354F008E5A15 /* hostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D74A4E1F64354F008E5A15 /* hostUITests.swift */; };
+		38D74A5D1F65735D008E5A15 /* 512x512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38D74A5C1F65735D008E5A15 /* 512x512.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		38D74A4A1F64354F008E5A15 /* hostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D74A4E1F64354F008E5A15 /* hostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hostUITests.swift; sourceTree = "<group>"; };
 		38D74A501F64354F008E5A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38D74A5C1F65735D008E5A15 /* 512x512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 512x512.jpg; path = Assets/512x512.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		38D74A2D1F64354F008E5A15 /* host */ = {
 			isa = PBXGroup;
 			children = (
+				38D74A5E1F657367008E5A15 /* Assets */,
 				38D74A2E1F64354F008E5A15 /* AppDelegate.swift */,
 				38D74A301F64354F008E5A15 /* ViewController.swift */,
 				38D74A321F64354F008E5A15 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				38D74A501F64354F008E5A15 /* Info.plist */,
 			);
 			path = hostUITests;
+			sourceTree = "<group>";
+		};
+		38D74A5E1F657367008E5A15 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				38D74A5C1F65735D008E5A15 /* 512x512.jpg */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +248,7 @@
 			files = (
 				38D74A391F64354F008E5A15 /* LaunchScreen.storyboard in Resources */,
 				38D74A361F64354F008E5A15 /* Assets.xcassets in Resources */,
+				38D74A5D1F65735D008E5A15 /* 512x512.jpg in Resources */,
 				38D74A341F64354F008E5A15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +528,7 @@
 				38D74A551F64354F008E5A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38D74A561F64354F008E5A15 /* Build configuration list for PBXNativeTarget "hostTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +537,7 @@
 				38D74A581F64354F008E5A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38D74A591F64354F008E5A15 /* Build configuration list for PBXNativeTarget "hostUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +546,7 @@
 				38D74A5B1F64354F008E5A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
