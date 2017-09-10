@@ -172,7 +172,7 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKSc
  override func viewDidLoad() {
  super.viewDidLoad()
  
- var url = NSURL(string:"http://localhost/~jornki/tests/WKDemo/")
+ var url = NSURL(string:"http://localhost/~raw/tests/WKDemo/")
  var req = NSURLRequest(URL:url)
  self.webView!.loadRequest(req)
  }
