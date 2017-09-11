@@ -67,10 +67,8 @@ class messageHandler:NSObject, WKScriptMessageHandler {
         
         let script = "(\(callbackString)('\(String(data:generatedJSONData, encoding: .utf8)!)'))"
         
-        appWebView!.evaluateJavaScript(script)
-            /*
-        {(JSReturnValue:Any?, error:Error?) in
-            if let errorDescription = error?.description{
+        appWebView!.evaluateJavaScript(script){(JSReturnValue:Any?, error:Error?) in
+            if let errorDescription = error?.localizedDescription{
                 print("returned value: \(errorDescription)")
             }
             else if JSReturnValue != nil{
@@ -80,7 +78,7 @@ class messageHandler:NSObject, WKScriptMessageHandler {
                 print("no return from JS")
             }
         }
-     */
+
 
 
     }
