@@ -5,49 +5,33 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKSc
     
     var webView: WKWebView!
     
-    override func loadView() {
-        super.loadView()
-        
-        let contentController = WKUserContentController();
-        
-        let userScript = WKUserScript(
-            source: "redHeader()",
-            injectionTime: WKUserScriptInjectionTime.atDocumentEnd,
-            forMainFrameOnly: true)
-        
-        contentController.addUserScript(userScript)
-        contentController.add(
-            self,
-            name: "callbackHandler")
-        
-        let webConfiguration = WKWebViewConfiguration()
-        webConfiguration.userContentController = contentController
-        
-        webView = WKWebView(frame: .zero, configuration: webConfiguration)
-        webView.uiDelegate = self
-        
-        view = webView
-        
-    }
-    
-    /*
-     override func viewDidLoad() {
-     super.viewDidLoad()
-     
-     let myURL = URL(string: "https://www.apple.com")
-     let myRequest = URLRequest(url: myURL!)
-     webView.load(myRequest)
-     }
-     
-     */
+    var theHandler:messageHandler?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+        super.viewDidLoad()
+        theHandler = messageHandler(theController: self)
+
+/*
+        fileIOtest()
         
+        return
         
         let webView = WKWebView()
+
+
+        if (1 < 0) {
+            let myURL = URL(string: "https://www.apple.com")
+            let myRequest = URLRequest(url: myURL!)
+            webView.load(myRequest)
+            view = webView
+            return
+        }
+
+        
         let htmlPath = Bundle.main.path(forResource: "index", ofType: "html")
         let htmlUrl = URL(fileURLWithPath: htmlPath!, isDirectory: false)
         webView.loadFileURL(htmlUrl, allowingReadAccessTo: htmlUrl)
@@ -65,8 +49,8 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKSc
             print("POST")
         }
         
-        
-        fileIOtest()
+
+ */
         
         
     }
@@ -76,6 +60,61 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKSc
     }
     
     
+    
+    func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo,
+                 completionHandler: @escaping () -> Void) {
+        
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            completionHandler()
+        }))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    
+    func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo,
+                 completionHandler: @escaping (Bool) -> Void) {
+        
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .actionSheet)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            completionHandler(true)
+        }))
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
+            completionHandler(false)
+        }))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    
+    func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo,
+                 completionHandler: @escaping (String?) -> Void) {
+        
+        let alertController = UIAlertController(title: nil, message: prompt, preferredStyle: .actionSheet)
+        
+        alertController.addTextField { (textField) in
+            textField.text = defaultText
+        }
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            if let text = alertController.textFields?.first?.text {
+                completionHandler(text)
+            } else {
+                completionHandler(defaultText)
+            }
+        }))
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
+            completionHandler(nil)
+        }))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+
+
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         
         print("userContentController called")
@@ -99,38 +138,9 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKSc
         // Dispose of any resources that can be recreated.
     }
     
-    func delay(_ delay:Double, closure:@escaping ()->()) {
-        let when = DispatchTime.now() + delay
-        DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
-    }
+
     
-    func fileIOtest() {
-        
-        // Save data to file
-        let fileName = "Test"
-        let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-        
-        let fileURL = DocumentDirURL.appendingPathComponent(fileName).appendingPathExtension("txt")
-        print("FilePath: \(fileURL.path)")
-        
-        let writeString = "Write this text to the fileURL as text in iOS using Swift"
-        
-        do {
-            // Write to the file
-            try writeString.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
-        } catch let error as NSError {
-            print("Failed writing to URL: \(fileURL), Error: " + error.localizedDescription)
-        }
-        
-        var readString = "" // Used to store the file contents
-        do {
-            // Read the file contents
-            readString = try String(contentsOf: fileURL)
-        } catch let error as NSError {
-            print("Failed reading from URL: \(fileURL), Error: " + error.localizedDescription)
-        }
-        print("File Text: \(readString)")
-    }
+
 }
 
 

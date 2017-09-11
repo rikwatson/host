@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>WKWebView Demo</title>
         <meta charset="utf-8">
-            <title>WKWebView Demo</title>
-            <link rel="stylesheet" type="text/css" href="./styles.css">
-                </head>
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="initial-scale=1.0">
+        <script type="text/javascript" src="./main.js" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+    </head>
     <body>
 
-        <h1 id="webkit-h1">WKWebView Test</h1>
 
-        <img src="./512x512.jpg">
+        <img src="./512x512.jpg" width=75%>
             
         <br/>
-        <input type="button" value="callNativeApp" onclick="callNativeApp();" />
+        <br/>
         
+        <div id="messages_from_swift">Count is 0</div>
+        
+        
+        <br/>
+        
+        <button onclick = "sendCount()">Click Me</button>
         
         <script type="text/javascript" src="./main.js"></script>
         

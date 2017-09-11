@@ -1,20 +1,29 @@
-function callNativeApp () {
+// Reasigning the webkit messageHandlers.native to the `host` var
+// simplifies later code and allows the iOS and Android versions
+// of the code to be consistant.
+//
+var native = window.webkit.messageHandlers.native
+
+
+
+
+
+var clicks = 0
+function sendCount(){
     
-    console.log("callNativeApp()")
-    
-    try {
-        var dictionary = {"key1":"value1", "key2":"value2", "subDictionary": {"name": "foo"}}
-        window.webkit.messageHandlers.callbackHandler.postMessage(dictionary);
-    } catch(error) {
-        console.log('The native context does not exist yet');
-        console.log(error)
+    var callback = function(responseAsJSON)
+    {
+        var response = JSON.parse(responseAsJSON)
+        clicks = response['count']
+        document.querySelector("#messages_from_swift").innerText = "Count is "+clicks
     }
+    
+    var message = {
+        "cmd"          : "increment",
+        "count"        : clicks,
+        "callbackFunc" : callback.toString()
+    }
+    
+    native.postMessage(message)
 }
 
-setTimeout(function () {
-           callNativeApp();
-           }, 5000);
-
-function redHeader() {
-    document.querySelector('h1').style.color = "red";
-}
