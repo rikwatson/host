@@ -137,9 +137,7 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKSc
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    
 
 }
 

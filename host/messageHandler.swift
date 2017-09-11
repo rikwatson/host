@@ -16,14 +16,12 @@ class messageHandler:NSObject, WKScriptMessageHandler {
         let theConfiguration = WKWebViewConfiguration()
         
         theConfiguration.userContentController.add(self, name: "native")
+
+        appWebView = WKWebView(frame: theController.view.frame, configuration: theConfiguration)
         
         let htmlPath = Bundle.main.path(forResource: "index", ofType: "html")
         let htmlUrl = URL(fileURLWithPath: htmlPath!, isDirectory: false)
-        
-
-        appWebView = WKWebView(frame: theController.view.frame, configuration: theConfiguration)
-
-        let request = URLRequest(url: htmlUrl) // NSURLRequest(URL: url as URL)
+        let request = URLRequest(url: htmlUrl)
         appWebView!.load(request)
         theController.view.addSubview(appWebView!)
     }
@@ -39,7 +37,7 @@ class messageHandler:NSObject, WKScriptMessageHandler {
         
         
         if command == "increment" {
-            guard var count = sentData["count"] as? Int else{
+            guard var count = sentData["count"] as? Int else {
                 return
             }
             count += 1
@@ -57,10 +55,10 @@ class messageHandler:NSObject, WKScriptMessageHandler {
         print("to")
         print(callback as Any)
         
-        guard let callbackString = callback else{
+        guard let callbackString = callback else {
             return
         }
-        guard let generatedJSONData = try? JSONSerialization.data(withJSONObject: aResponse, options: JSONSerialization.WritingOptions(rawValue: 0)) else{
+        guard let generatedJSONData = try? JSONSerialization.data(withJSONObject: aResponse, options: JSONSerialization.WritingOptions(rawValue: 0)) else {
             print("failed to generate JSON for \(aResponse)")
             return
         }
@@ -68,18 +66,13 @@ class messageHandler:NSObject, WKScriptMessageHandler {
         let script = "(\(callbackString)('\(String(data:generatedJSONData, encoding: .utf8)!)'))"
         
         appWebView!.evaluateJavaScript(script){(JSReturnValue:Any?, error:Error?) in
-            if let errorDescription = error?.localizedDescription{
+            if let errorDescription = error?.localizedDescription {
                 print("returned value: \(errorDescription)")
-            }
-            else if JSReturnValue != nil{
+            } else if JSReturnValue != nil {
                 print("returned value: \(JSReturnValue!)")
-            }
-            else{
+            } else {
                 print("no return from JS")
             }
         }
-
-
-
     }
 }
