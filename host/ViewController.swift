@@ -18,10 +18,7 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKSc
 /*
         fileIOtest()
         
-        return
-        
         let webView = WKWebView()
-
 
         if (1 < 0) {
             let myURL = URL(string: "https://www.apple.com")
@@ -31,13 +28,11 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKSc
             return
         }
 
-        
         let htmlPath = Bundle.main.path(forResource: "index", ofType: "html")
         let htmlUrl = URL(fileURLWithPath: htmlPath!, isDirectory: false)
         webView.loadFileURL(htmlUrl, allowingReadAccessTo: htmlUrl)
         webView.navigationDelegate = self
         view = webView
-        
         
         delay(0.1) {
             print("PRE")
@@ -191,36 +186,6 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKSc
  }
  }
  
- override func didReceiveMemoryWarning()...
- }
- 
- 
+
  
  */
-
-
-//
-//  ViewController.swift
-//  host
-//
-//  Created by Rik Watson on 09/09/2017.
-//  Copyright © 2017 Rik Watson. All rights reserved.
-/*
-
-import UIKit
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
-}
-*/
