@@ -52,13 +52,13 @@ class ViewController: UIViewController, WKNavigationDelegate {
     init(theController:ViewController){
         super.init()
         let theConfiguration = WKWebViewConfiguration()
-        let unzipDirectory: URL = getWwwRoot()
+//        let unzipDirectory: URL = getWwwRoot()
 
         
         theConfiguration.userContentController.add(self, name: "native")
 
         appWebView = WKWebView(frame: theController.view.frame, configuration: theConfiguration)
-        
+/*
         let zipURL = URL(fileURLWithPath: "wwwroot/index.html", relativeTo: unzipDirectory as URL?)
         
         os_log ("zipURL = %{public}@", zipURL.absoluteString )
@@ -70,14 +70,14 @@ class ViewController: UIViewController, WKNavigationDelegate {
         my_log ("Request is " + request.debugDescription)
         my_log("Hello!")
         
-/*
+*/
         
         let htmlPath = Bundle.main.path(forResource: "index", ofType: "html")
         let htmlUrl = URL(fileURLWithPath: htmlPath!, isDirectory: false)
-*/
+        let request = URLRequest(url: htmlUrl)
         
         
-         appWebView!.loadFileURL(zipURL, allowingReadAccessTo: zipURL)
+         // appWebView!.loadFileURL(zipURL, allowingReadAccessTo: zipURL)
          // appWebView!.navigationDelegate = self
         appWebView!.load(request)
         
