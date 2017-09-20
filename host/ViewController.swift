@@ -1,6 +1,7 @@
 import UIKit
 import WebKit
 
+
 class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler {
     
     var webView: WKWebView!
@@ -10,9 +11,8 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate, WKSc
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
-        
-        super.viewDidLoad()
         theHandler = messageHandler(theController: self)
 
 /*
