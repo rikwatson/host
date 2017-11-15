@@ -23,8 +23,23 @@
 		38D74A4F1F64354F008E5A15 /* hostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D74A4E1F64354F008E5A15 /* hostUITests.swift */; };
 		38D74A5D1F65735D008E5A15 /* 512x512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38D74A5C1F65735D008E5A15 /* 512x512.jpg */; };
 		38D74A631F6597E2008E5A15 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 38D74A601F6597E2008E5A15 /* index.html */; };
-		38D74A641F6597E2008E5A15 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 38D74A611F6597E2008E5A15 /* main.js */; };
-		38D74A651F6597E2008E5A15 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 38D74A621F6597E2008E5A15 /* styles.css */; };
+		38ECB4531F724B9E0053D80D /* 3rdpartylicenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4421F724B9C0053D80D /* 3rdpartylicenses.txt */; };
+		38ECB4541F724B9E0053D80D /* inline.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4431F724B9C0053D80D /* inline.bundle.js */; };
+		38ECB4551F724B9E0053D80D /* main.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4441F724B9C0053D80D /* main.bundle.js */; };
+		38ECB4561F724B9E0053D80D /* glyphicons-halflings-regular.eot in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4451F724B9C0053D80D /* glyphicons-halflings-regular.eot */; };
+		38ECB4571F724B9E0053D80D /* glyphicons-halflings-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4461F724B9C0053D80D /* glyphicons-halflings-regular.ttf */; };
+		38ECB4581F724B9E0053D80D /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4471F724B9C0053D80D /* assets */; };
+		38ECB4591F724B9E0053D80D /* glyphicons-halflings-regular.svg in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4481F724B9D0053D80D /* glyphicons-halflings-regular.svg */; };
+		38ECB45A1F724B9E0053D80D /* glyphicons-halflings-regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4491F724B9D0053D80D /* glyphicons-halflings-regular.woff2 */; };
+		38ECB45B1F724B9E0053D80D /* MaterialIcons-Regular.eot in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB44A1F724B9D0053D80D /* MaterialIcons-Regular.eot */; };
+		38ECB45C1F724B9E0053D80D /* MaterialIcons-Regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB44B1F724B9D0053D80D /* MaterialIcons-Regular.woff2 */; };
+		38ECB45D1F724B9E0053D80D /* styles.bundle.css in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB44C1F724B9D0053D80D /* styles.bundle.css */; };
+		38ECB45E1F724B9E0053D80D /* MaterialIcons-Regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB44D1F724B9D0053D80D /* MaterialIcons-Regular.woff */; };
+		38ECB45F1F724B9E0053D80D /* vendor.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB44E1F724B9D0053D80D /* vendor.bundle.js */; };
+		38ECB4601F724B9E0053D80D /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB44F1F724B9E0053D80D /* MaterialIcons-Regular.ttf */; };
+		38ECB4611F724B9E0053D80D /* glyphicons-halflings-regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4501F724B9E0053D80D /* glyphicons-halflings-regular.woff */; };
+		38ECB4621F724B9E0053D80D /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4511F724B9E0053D80D /* favicon.ico */; };
+		38ECB4631F724B9E0053D80D /* polyfills.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4521F724B9E0053D80D /* polyfills.bundle.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		381779D51F73B16B00D93AA1 /* Objective-CBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgingHeader.h"; sourceTree = "<group>"; };
 		385A56861F668A6C0006E5FF /* fileIoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fileIoHelper.swift; sourceTree = "<group>"; };
 		385A56881F668B800006E5FF /* utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		385A568A1F6698700006E5FF /* messageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageHandler.swift; sourceTree = "<group>"; };
@@ -83,8 +99,23 @@
 		38D74A501F64354F008E5A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38D74A5C1F65735D008E5A15 /* 512x512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 512x512.jpg; path = Assets/512x512.jpg; sourceTree = "<group>"; };
 		38D74A601F6597E2008E5A15 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = wwwroot/index.html; sourceTree = "<group>"; };
-		38D74A611F6597E2008E5A15 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = wwwroot/main.js; sourceTree = "<group>"; };
-		38D74A621F6597E2008E5A15 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = styles.css; path = wwwroot/styles.css; sourceTree = "<group>"; };
+		38ECB4421F724B9C0053D80D /* 3rdpartylicenses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 3rdpartylicenses.txt; path = wwwroot/3rdpartylicenses.txt; sourceTree = "<group>"; };
+		38ECB4431F724B9C0053D80D /* inline.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = inline.bundle.js; path = wwwroot/inline.bundle.js; sourceTree = "<group>"; };
+		38ECB4441F724B9C0053D80D /* main.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.bundle.js; path = wwwroot/main.bundle.js; sourceTree = "<group>"; };
+		38ECB4451F724B9C0053D80D /* glyphicons-halflings-regular.eot */ = {isa = PBXFileReference; lastKnownFileType = file; name = "glyphicons-halflings-regular.eot"; path = "wwwroot/glyphicons-halflings-regular.eot"; sourceTree = "<group>"; };
+		38ECB4461F724B9C0053D80D /* glyphicons-halflings-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "glyphicons-halflings-regular.ttf"; path = "wwwroot/glyphicons-halflings-regular.ttf"; sourceTree = "<group>"; };
+		38ECB4471F724B9C0053D80D /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = wwwroot/assets; sourceTree = "<group>"; };
+		38ECB4481F724B9D0053D80D /* glyphicons-halflings-regular.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "glyphicons-halflings-regular.svg"; path = "wwwroot/glyphicons-halflings-regular.svg"; sourceTree = "<group>"; };
+		38ECB4491F724B9D0053D80D /* glyphicons-halflings-regular.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "glyphicons-halflings-regular.woff2"; path = "wwwroot/glyphicons-halflings-regular.woff2"; sourceTree = "<group>"; };
+		38ECB44A1F724B9D0053D80D /* MaterialIcons-Regular.eot */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MaterialIcons-Regular.eot"; path = "wwwroot/MaterialIcons-Regular.eot"; sourceTree = "<group>"; };
+		38ECB44B1F724B9D0053D80D /* MaterialIcons-Regular.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MaterialIcons-Regular.woff2"; path = "wwwroot/MaterialIcons-Regular.woff2"; sourceTree = "<group>"; };
+		38ECB44C1F724B9D0053D80D /* styles.bundle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = styles.bundle.css; path = wwwroot/styles.bundle.css; sourceTree = "<group>"; };
+		38ECB44D1F724B9D0053D80D /* MaterialIcons-Regular.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MaterialIcons-Regular.woff"; path = "wwwroot/MaterialIcons-Regular.woff"; sourceTree = "<group>"; };
+		38ECB44E1F724B9D0053D80D /* vendor.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = vendor.bundle.js; path = wwwroot/vendor.bundle.js; sourceTree = "<group>"; };
+		38ECB44F1F724B9E0053D80D /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MaterialIcons-Regular.ttf"; path = "wwwroot/MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
+		38ECB4501F724B9E0053D80D /* glyphicons-halflings-regular.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "glyphicons-halflings-regular.woff"; path = "wwwroot/glyphicons-halflings-regular.woff"; sourceTree = "<group>"; };
+		38ECB4511F724B9E0053D80D /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; name = favicon.ico; path = wwwroot/favicon.ico; sourceTree = "<group>"; };
+		38ECB4521F724B9E0053D80D /* polyfills.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = polyfills.bundle.js; path = wwwroot/polyfills.bundle.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +193,7 @@
 				38D74A3A1F64354F008E5A15 /* Info.plist */,
 				385A56861F668A6C0006E5FF /* fileIoHelper.swift */,
 				385A56881F668B800006E5FF /* utils.swift */,
+				381779D51F73B16B00D93AA1 /* Objective-CBridgingHeader.h */,
 			);
 			path = host;
 			sourceTree = "<group>";
@@ -195,9 +227,24 @@
 		38D74A5F1F6597A9008E5A15 /* wwwroot */ = {
 			isa = PBXGroup;
 			children = (
+				38ECB4421F724B9C0053D80D /* 3rdpartylicenses.txt */,
+				38ECB4471F724B9C0053D80D /* assets */,
+				38ECB4511F724B9E0053D80D /* favicon.ico */,
+				38ECB4451F724B9C0053D80D /* glyphicons-halflings-regular.eot */,
+				38ECB4481F724B9D0053D80D /* glyphicons-halflings-regular.svg */,
+				38ECB4461F724B9C0053D80D /* glyphicons-halflings-regular.ttf */,
+				38ECB4501F724B9E0053D80D /* glyphicons-halflings-regular.woff */,
+				38ECB4491F724B9D0053D80D /* glyphicons-halflings-regular.woff2 */,
+				38ECB4431F724B9C0053D80D /* inline.bundle.js */,
+				38ECB4441F724B9C0053D80D /* main.bundle.js */,
+				38ECB44A1F724B9D0053D80D /* MaterialIcons-Regular.eot */,
+				38ECB44F1F724B9E0053D80D /* MaterialIcons-Regular.ttf */,
+				38ECB44D1F724B9D0053D80D /* MaterialIcons-Regular.woff */,
+				38ECB44B1F724B9D0053D80D /* MaterialIcons-Regular.woff2 */,
+				38ECB4521F724B9E0053D80D /* polyfills.bundle.js */,
+				38ECB44C1F724B9D0053D80D /* styles.bundle.css */,
+				38ECB44E1F724B9D0053D80D /* vendor.bundle.js */,
 				38D74A601F6597E2008E5A15 /* index.html */,
-				38D74A611F6597E2008E5A15 /* main.js */,
-				38D74A621F6597E2008E5A15 /* styles.css */,
 			);
 			name = wwwroot;
 			sourceTree = "<group>";
@@ -316,14 +363,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38ECB4561F724B9E0053D80D /* glyphicons-halflings-regular.eot in Resources */,
 				38D74A631F6597E2008E5A15 /* index.html in Resources */,
 				38D74A391F64354F008E5A15 /* LaunchScreen.storyboard in Resources */,
+				38ECB4601F724B9E0053D80D /* MaterialIcons-Regular.ttf in Resources */,
+				38ECB4571F724B9E0053D80D /* glyphicons-halflings-regular.ttf in Resources */,
+				38ECB45E1F724B9E0053D80D /* MaterialIcons-Regular.woff in Resources */,
+				38ECB45D1F724B9E0053D80D /* styles.bundle.css in Resources */,
+				38ECB4591F724B9E0053D80D /* glyphicons-halflings-regular.svg in Resources */,
+				38ECB4541F724B9E0053D80D /* inline.bundle.js in Resources */,
+				38ECB45A1F724B9E0053D80D /* glyphicons-halflings-regular.woff2 in Resources */,
+				38ECB45C1F724B9E0053D80D /* MaterialIcons-Regular.woff2 in Resources */,
 				38D74A361F64354F008E5A15 /* Assets.xcassets in Resources */,
-				38D74A641F6597E2008E5A15 /* main.js in Resources */,
 				38D74A5D1F65735D008E5A15 /* 512x512.jpg in Resources */,
 				385A56B11F6A78DF0006E5FF /* wwwroot.zip in Resources */,
+				38ECB4631F724B9E0053D80D /* polyfills.bundle.js in Resources */,
+				38ECB45F1F724B9E0053D80D /* vendor.bundle.js in Resources */,
+				38ECB45B1F724B9E0053D80D /* MaterialIcons-Regular.eot in Resources */,
+				38ECB4531F724B9E0053D80D /* 3rdpartylicenses.txt in Resources */,
+				38ECB4581F724B9E0053D80D /* assets in Resources */,
+				38ECB4621F724B9E0053D80D /* favicon.ico in Resources */,
+				38ECB4611F724B9E0053D80D /* glyphicons-halflings-regular.woff in Resources */,
 				38D74A341F64354F008E5A15 /* Main.storyboard in Resources */,
-				38D74A651F6597E2008E5A15 /* styles.css in Resources */,
+				38ECB4551F724B9E0053D80D /* main.bundle.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
