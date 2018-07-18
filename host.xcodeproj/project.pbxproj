@@ -10,6 +10,10 @@
 		385A56871F668A6C0006E5FF /* fileIoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A56861F668A6C0006E5FF /* fileIoHelper.swift */; };
 		385A56891F668B800006E5FF /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A56881F668B800006E5FF /* utils.swift */; };
 		385A568B1F6698700006E5FF /* messageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A568A1F6698700006E5FF /* messageHandler.swift */; };
+		385A56B11F6A78DF0006E5FF /* wwwroot.zip in Resources */ = {isa = PBXBuildFile; fileRef = 385A56B01F6A78DF0006E5FF /* wwwroot.zip */; };
+		385A56B81F6A79EF0006E5FF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 385A56B71F6A79EF0006E5FF /* libz.tbd */; };
+		385A56E11F6A81DA0006E5FF /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385A56E01F6A81DA0006E5FF /* Zip.framework */; };
+		385A56E21F6A81DA0006E5FF /* Zip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 385A56E01F6A81DA0006E5FF /* Zip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		38D74A2F1F64354F008E5A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D74A2E1F64354F008E5A15 /* AppDelegate.swift */; };
 		38D74A311F64354F008E5A15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D74A301F64354F008E5A15 /* ViewController.swift */; };
 		38D74A341F64354F008E5A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D74A321F64354F008E5A15 /* Main.storyboard */; };
@@ -19,8 +23,23 @@
 		38D74A4F1F64354F008E5A15 /* hostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D74A4E1F64354F008E5A15 /* hostUITests.swift */; };
 		38D74A5D1F65735D008E5A15 /* 512x512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38D74A5C1F65735D008E5A15 /* 512x512.jpg */; };
 		38D74A631F6597E2008E5A15 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 38D74A601F6597E2008E5A15 /* index.html */; };
-		38D74A641F6597E2008E5A15 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 38D74A611F6597E2008E5A15 /* main.js */; };
-		38D74A651F6597E2008E5A15 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 38D74A621F6597E2008E5A15 /* styles.css */; };
+		38ECB4531F724B9E0053D80D /* 3rdpartylicenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4421F724B9C0053D80D /* 3rdpartylicenses.txt */; };
+		38ECB4541F724B9E0053D80D /* inline.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4431F724B9C0053D80D /* inline.bundle.js */; };
+		38ECB4551F724B9E0053D80D /* main.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4441F724B9C0053D80D /* main.bundle.js */; };
+		38ECB4561F724B9E0053D80D /* glyphicons-halflings-regular.eot in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4451F724B9C0053D80D /* glyphicons-halflings-regular.eot */; };
+		38ECB4571F724B9E0053D80D /* glyphicons-halflings-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4461F724B9C0053D80D /* glyphicons-halflings-regular.ttf */; };
+		38ECB4581F724B9E0053D80D /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4471F724B9C0053D80D /* assets */; };
+		38ECB4591F724B9E0053D80D /* glyphicons-halflings-regular.svg in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4481F724B9D0053D80D /* glyphicons-halflings-regular.svg */; };
+		38ECB45A1F724B9E0053D80D /* glyphicons-halflings-regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4491F724B9D0053D80D /* glyphicons-halflings-regular.woff2 */; };
+		38ECB45B1F724B9E0053D80D /* MaterialIcons-Regular.eot in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB44A1F724B9D0053D80D /* MaterialIcons-Regular.eot */; };
+		38ECB45C1F724B9E0053D80D /* MaterialIcons-Regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB44B1F724B9D0053D80D /* MaterialIcons-Regular.woff2 */; };
+		38ECB45D1F724B9E0053D80D /* styles.bundle.css in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB44C1F724B9D0053D80D /* styles.bundle.css */; };
+		38ECB45E1F724B9E0053D80D /* MaterialIcons-Regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB44D1F724B9D0053D80D /* MaterialIcons-Regular.woff */; };
+		38ECB45F1F724B9E0053D80D /* vendor.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB44E1F724B9D0053D80D /* vendor.bundle.js */; };
+		38ECB4601F724B9E0053D80D /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB44F1F724B9E0053D80D /* MaterialIcons-Regular.ttf */; };
+		38ECB4611F724B9E0053D80D /* glyphicons-halflings-regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4501F724B9E0053D80D /* glyphicons-halflings-regular.woff */; };
+		38ECB4621F724B9E0053D80D /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4511F724B9E0053D80D /* favicon.ico */; };
+		38ECB4631F724B9E0053D80D /* polyfills.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB4521F724B9E0053D80D /* polyfills.bundle.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +59,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		385A56E31F6A81DA0006E5FF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				385A56E21F6A81DA0006E5FF /* Zip.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		381779D51F73B16B00D93AA1 /* Objective-CBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgingHeader.h"; sourceTree = "<group>"; };
 		385A56861F668A6C0006E5FF /* fileIoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fileIoHelper.swift; sourceTree = "<group>"; };
 		385A56881F668B800006E5FF /* utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		385A568A1F6698700006E5FF /* messageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageHandler.swift; sourceTree = "<group>"; };
+		385A56B01F6A78DF0006E5FF /* wwwroot.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = wwwroot.zip; sourceTree = "<group>"; };
+		385A56B71F6A79EF0006E5FF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		385A56DA1F6A7FAD0006E5FF /* Minizip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Minizip.framework; path = Carthage/Build/iOS/Minizip.framework; sourceTree = "<group>"; };
+		385A56DB1F6A7FAD0006E5FF /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZipArchive.framework; path = Carthage/Build/iOS/ZipArchive.framework; sourceTree = "<group>"; };
+		385A56DE1F6A80BF0006E5FF /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Zip.framework; path = Carthage/Build/iOS/Zip.framework; sourceTree = "<group>"; };
+		385A56E01F6A81DA0006E5FF /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Zip.framework; path = Carthage/Build/iOS/Zip.framework; sourceTree = "<group>"; };
 		38D74A2B1F64354F008E5A15 /* host.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = host.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D74A2E1F64354F008E5A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38D74A301F64354F008E5A15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,8 +99,23 @@
 		38D74A501F64354F008E5A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38D74A5C1F65735D008E5A15 /* 512x512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 512x512.jpg; path = Assets/512x512.jpg; sourceTree = "<group>"; };
 		38D74A601F6597E2008E5A15 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = wwwroot/index.html; sourceTree = "<group>"; };
-		38D74A611F6597E2008E5A15 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = wwwroot/main.js; sourceTree = "<group>"; };
-		38D74A621F6597E2008E5A15 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = styles.css; path = wwwroot/styles.css; sourceTree = "<group>"; };
+		38ECB4421F724B9C0053D80D /* 3rdpartylicenses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 3rdpartylicenses.txt; path = wwwroot/3rdpartylicenses.txt; sourceTree = "<group>"; };
+		38ECB4431F724B9C0053D80D /* inline.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = inline.bundle.js; path = wwwroot/inline.bundle.js; sourceTree = "<group>"; };
+		38ECB4441F724B9C0053D80D /* main.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.bundle.js; path = wwwroot/main.bundle.js; sourceTree = "<group>"; };
+		38ECB4451F724B9C0053D80D /* glyphicons-halflings-regular.eot */ = {isa = PBXFileReference; lastKnownFileType = file; name = "glyphicons-halflings-regular.eot"; path = "wwwroot/glyphicons-halflings-regular.eot"; sourceTree = "<group>"; };
+		38ECB4461F724B9C0053D80D /* glyphicons-halflings-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "glyphicons-halflings-regular.ttf"; path = "wwwroot/glyphicons-halflings-regular.ttf"; sourceTree = "<group>"; };
+		38ECB4471F724B9C0053D80D /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = wwwroot/assets; sourceTree = "<group>"; };
+		38ECB4481F724B9D0053D80D /* glyphicons-halflings-regular.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "glyphicons-halflings-regular.svg"; path = "wwwroot/glyphicons-halflings-regular.svg"; sourceTree = "<group>"; };
+		38ECB4491F724B9D0053D80D /* glyphicons-halflings-regular.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "glyphicons-halflings-regular.woff2"; path = "wwwroot/glyphicons-halflings-regular.woff2"; sourceTree = "<group>"; };
+		38ECB44A1F724B9D0053D80D /* MaterialIcons-Regular.eot */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MaterialIcons-Regular.eot"; path = "wwwroot/MaterialIcons-Regular.eot"; sourceTree = "<group>"; };
+		38ECB44B1F724B9D0053D80D /* MaterialIcons-Regular.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MaterialIcons-Regular.woff2"; path = "wwwroot/MaterialIcons-Regular.woff2"; sourceTree = "<group>"; };
+		38ECB44C1F724B9D0053D80D /* styles.bundle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = styles.bundle.css; path = wwwroot/styles.bundle.css; sourceTree = "<group>"; };
+		38ECB44D1F724B9D0053D80D /* MaterialIcons-Regular.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MaterialIcons-Regular.woff"; path = "wwwroot/MaterialIcons-Regular.woff"; sourceTree = "<group>"; };
+		38ECB44E1F724B9D0053D80D /* vendor.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = vendor.bundle.js; path = wwwroot/vendor.bundle.js; sourceTree = "<group>"; };
+		38ECB44F1F724B9E0053D80D /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MaterialIcons-Regular.ttf"; path = "wwwroot/MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
+		38ECB4501F724B9E0053D80D /* glyphicons-halflings-regular.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "glyphicons-halflings-regular.woff"; path = "wwwroot/glyphicons-halflings-regular.woff"; sourceTree = "<group>"; };
+		38ECB4511F724B9E0053D80D /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; name = favicon.ico; path = wwwroot/favicon.ico; sourceTree = "<group>"; };
+		38ECB4521F724B9E0053D80D /* polyfills.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = polyfills.bundle.js; path = wwwroot/polyfills.bundle.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				385A56E11F6A81DA0006E5FF /* Zip.framework in Frameworks */,
+				385A56B81F6A79EF0006E5FF /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,13 +145,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		385A56B61F6A79EF0006E5FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				385A56DE1F6A80BF0006E5FF /* Zip.framework */,
+				385A56DA1F6A7FAD0006E5FF /* Minizip.framework */,
+				385A56DB1F6A7FAD0006E5FF /* ZipArchive.framework */,
+				385A56B71F6A79EF0006E5FF /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		38D74A221F64354F008E5A15 = {
 			isa = PBXGroup;
 			children = (
+				385A56E01F6A81DA0006E5FF /* Zip.framework */,
 				38D74A2D1F64354F008E5A15 /* host */,
 				38D74A421F64354F008E5A15 /* hostTests */,
 				38D74A4D1F64354F008E5A15 /* hostUITests */,
 				38D74A2C1F64354F008E5A15 /* Products */,
+				385A56B61F6A79EF0006E5FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +181,7 @@
 		38D74A2D1F64354F008E5A15 /* host */ = {
 			isa = PBXGroup;
 			children = (
+				385A56B01F6A78DF0006E5FF /* wwwroot.zip */,
 				38D74A5F1F6597A9008E5A15 /* wwwroot */,
 				38D74A5E1F657367008E5A15 /* Assets */,
 				38D74A2E1F64354F008E5A15 /* AppDelegate.swift */,
@@ -122,6 +193,7 @@
 				38D74A3A1F64354F008E5A15 /* Info.plist */,
 				385A56861F668A6C0006E5FF /* fileIoHelper.swift */,
 				385A56881F668B800006E5FF /* utils.swift */,
+				381779D51F73B16B00D93AA1 /* Objective-CBridgingHeader.h */,
 			);
 			path = host;
 			sourceTree = "<group>";
@@ -155,9 +227,24 @@
 		38D74A5F1F6597A9008E5A15 /* wwwroot */ = {
 			isa = PBXGroup;
 			children = (
+				38ECB4421F724B9C0053D80D /* 3rdpartylicenses.txt */,
+				38ECB4471F724B9C0053D80D /* assets */,
+				38ECB4511F724B9E0053D80D /* favicon.ico */,
+				38ECB4451F724B9C0053D80D /* glyphicons-halflings-regular.eot */,
+				38ECB4481F724B9D0053D80D /* glyphicons-halflings-regular.svg */,
+				38ECB4461F724B9C0053D80D /* glyphicons-halflings-regular.ttf */,
+				38ECB4501F724B9E0053D80D /* glyphicons-halflings-regular.woff */,
+				38ECB4491F724B9D0053D80D /* glyphicons-halflings-regular.woff2 */,
+				38ECB4431F724B9C0053D80D /* inline.bundle.js */,
+				38ECB4441F724B9C0053D80D /* main.bundle.js */,
+				38ECB44A1F724B9D0053D80D /* MaterialIcons-Regular.eot */,
+				38ECB44F1F724B9E0053D80D /* MaterialIcons-Regular.ttf */,
+				38ECB44D1F724B9D0053D80D /* MaterialIcons-Regular.woff */,
+				38ECB44B1F724B9D0053D80D /* MaterialIcons-Regular.woff2 */,
+				38ECB4521F724B9E0053D80D /* polyfills.bundle.js */,
+				38ECB44C1F724B9D0053D80D /* styles.bundle.css */,
+				38ECB44E1F724B9D0053D80D /* vendor.bundle.js */,
 				38D74A601F6597E2008E5A15 /* index.html */,
-				38D74A611F6597E2008E5A15 /* main.js */,
-				38D74A621F6597E2008E5A15 /* styles.css */,
 			);
 			name = wwwroot;
 			sourceTree = "<group>";
@@ -172,6 +259,7 @@
 				38D74A271F64354F008E5A15 /* Sources */,
 				38D74A281F64354F008E5A15 /* Frameworks */,
 				38D74A291F64354F008E5A15 /* Resources */,
+				385A56E31F6A81DA0006E5FF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,23 +313,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Rik Watson";
 				TargetAttributes = {
 					38D74A2A1F64354F008E5A15 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 235PB64AWP;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					38D74A3E1F64354F008E5A15 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 235PB64AWP;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 38D74A2A1F64354F008E5A15;
 					};
 					38D74A491F64354F008E5A15 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 235PB64AWP;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 38D74A2A1F64354F008E5A15;
 					};
@@ -272,13 +363,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38ECB4561F724B9E0053D80D /* glyphicons-halflings-regular.eot in Resources */,
 				38D74A631F6597E2008E5A15 /* index.html in Resources */,
 				38D74A391F64354F008E5A15 /* LaunchScreen.storyboard in Resources */,
+				38ECB4601F724B9E0053D80D /* MaterialIcons-Regular.ttf in Resources */,
+				38ECB4571F724B9E0053D80D /* glyphicons-halflings-regular.ttf in Resources */,
+				38ECB45E1F724B9E0053D80D /* MaterialIcons-Regular.woff in Resources */,
+				38ECB45D1F724B9E0053D80D /* styles.bundle.css in Resources */,
+				38ECB4591F724B9E0053D80D /* glyphicons-halflings-regular.svg in Resources */,
+				38ECB4541F724B9E0053D80D /* inline.bundle.js in Resources */,
+				38ECB45A1F724B9E0053D80D /* glyphicons-halflings-regular.woff2 in Resources */,
+				38ECB45C1F724B9E0053D80D /* MaterialIcons-Regular.woff2 in Resources */,
 				38D74A361F64354F008E5A15 /* Assets.xcassets in Resources */,
-				38D74A641F6597E2008E5A15 /* main.js in Resources */,
 				38D74A5D1F65735D008E5A15 /* 512x512.jpg in Resources */,
+				385A56B11F6A78DF0006E5FF /* wwwroot.zip in Resources */,
+				38ECB4631F724B9E0053D80D /* polyfills.bundle.js in Resources */,
+				38ECB45F1F724B9E0053D80D /* vendor.bundle.js in Resources */,
+				38ECB45B1F724B9E0053D80D /* MaterialIcons-Regular.eot in Resources */,
+				38ECB4531F724B9E0053D80D /* 3rdpartylicenses.txt in Resources */,
+				38ECB4581F724B9E0053D80D /* assets in Resources */,
+				38ECB4621F724B9E0053D80D /* favicon.ico in Resources */,
+				38ECB4611F724B9E0053D80D /* glyphicons-halflings-regular.woff in Resources */,
 				38D74A341F64354F008E5A15 /* Main.storyboard in Resources */,
-				38D74A651F6597E2008E5A15 /* styles.css in Resources */,
+				38ECB4551F724B9E0053D80D /* main.bundle.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +479,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -380,7 +489,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -423,7 +536,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -431,7 +546,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -461,12 +580,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 235PB64AWP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = host/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plancd.host;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -474,12 +601,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 235PB64AWP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = host/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plancd.host;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -493,7 +627,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plancd.hostTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/host.app/host";
 			};
 			name = Debug;
@@ -508,7 +643,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plancd.hostTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/host.app/host";
 			};
 			name = Release;
@@ -522,7 +658,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plancd.hostUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = host;
 			};
 			name = Debug;
@@ -536,7 +673,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plancd.hostUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = host;
 			};
 			name = Release;
