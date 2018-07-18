@@ -33,7 +33,7 @@ else
   convert "$base" -resize 152x152!   "Icon-152.png"
   convert "$base" -resize 167x167!   "Icon-167.png"
   convert "$base" -resize 180x180!   "Icon-180.png"
-  convert "$base" -resize 512x512!   "Icon-512.png"
+  convert "$base" -resize 512x512!   "Icon-512.png"     
 
 
   convert "$base" -resize 512x512!   "iTunesArtwork"
